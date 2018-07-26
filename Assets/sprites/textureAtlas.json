@@ -5,29 +5,31 @@
 ],
 
 "frames": [
-    [1, 1, 210, 594, 0, 0, 0],
-    [1, 597, 150, 150, 0, 0, 0],
-    [153, 597, 75, 101, 0, 0, 0],
-    [153, 700, 75, 101, 0, 0, 0],
-    [1, 749, 150, 50, 0, 0, 0],
-    [1, 801, 150, 50, 0, 0, 0],
-    [153, 803, 75, 54, 0, 0, -18],
-    [1, 853, 75, 54, 0, 0, -18]
+    [1, 1, 119, 216, 0, -1, 0],
+    [1, 219, 150, 150, 0, 0, 0],
+    [1, 371, 150, 50, 0, 0, 0],
+    [1, 423, 150, 50, 0, 0, 0],
+    [122, 1, 75, 101, 0, 0, 0],
+    [122, 104, 88, 100, 0, -1, 0],
+    [153, 206, 75, 101, 0, 0, 0],
+    [153, 309, 75, 54, 0, 0, -18],
+    [153, 365, 75, 54, 0, 0, -18]
 ],
 
 "animations": {
-    "bus-top-view.hi": { "frames": [0] },
+    "Police": { "frames": [0] },
     "shole": { "frames": [1] },
-    "run2": { "frames": [2] },
-    "run4": { "frames": [3] },
-    "RestartButton": { "frames": [4] },
-    "StartButton": { "frames": [5] },
-    "run1": { "frames": [6] },
-    "run3": { "frames": [7] }
+    "RestartButton": { "frames": [2] },
+    "StartButton": { "frames": [3] },
+    "run2": { "frames": [4] },
+    "Bon": { "frames": [5] },
+    "run4": { "frames": [6] },
+    "run1": { "frames": [7] },
+    "run3": { "frames": [8] }
 },
 
 "texturepacker": [
-        "SmartUpdateHash: $TexturePacker:SmartUpdate:cc412dc32c1e29150e63785af17003a0:3e531fcd97462a0c28e80f8bbd9e791b:2b5604bc88faefd55ddac16e9bce1532$",
+        "SmartUpdateHash: $TexturePacker:SmartUpdate:6b7bec85531c3e3d44ac80894ad450f2:2788b7de8a2a9267ce5e4f67ed4e17ce:2b5604bc88faefd55ddac16e9bce1532$",
         "Created with TexturePacker (https://www.codeandweb.com/texturepacker) for EaselJS"
 ]
 

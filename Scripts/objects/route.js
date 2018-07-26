@@ -30,7 +30,7 @@ var objects;
         };
         // public methods
         Route.prototype.Start = function () {
-            this._verticalSpeed = 5; // 5 pixels per frame
+            this._verticalSpeed = 2; // 5 pixels per frame
             this.Reset();
         };
         Route.prototype.Update = function () {

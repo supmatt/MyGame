@@ -23,7 +23,7 @@ namespace objects {
   
       // public methods
       public Start(): void {
-        this._verticalSpeed = 5; // 5 pixels per frame
+        this._verticalSpeed = 2; // 5 pixels per frame
         this.Reset();
       }
   
