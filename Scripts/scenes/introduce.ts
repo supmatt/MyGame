@@ -2,6 +2,7 @@ module scenes {
     export class Introduce extends objects.Scene {
         // member variables
         private _welcomeLabel: objects.Label;
+        private _welcomeLabel2: objects.Label;
         private _playButton: objects.Button;
         private _ocean: objects.Ocean;
 
@@ -19,7 +20,8 @@ module scenes {
 
             this._ocean = new objects.Ocean();
 
-            this._welcomeLabel = new objects.Label("Mail Pilot", "80px", "Dock51", "#FFFF00", config.Screen.HALF_WIDTH, config.Screen.HALF_HEIGHT, true);
+            this._welcomeLabel = new objects.Label("Use the mouse controls the hero" + "/n" + "<br>to avoid the dangers on the road", "30px", "Dock51", "#FFFF00", config.Screen.HALF_WIDTH, config.Screen.HALF_HEIGHT, true);
+            // this._welcomeLabel2 = new objects.Label("Use the mouse controls the hero to avoid the dangers on the road", "30px", "Dock51", "#FFFF00", config.Screen.HALF_WIDTH, 300, true);
             this._playButton = new objects.Button("StartButton", config.Screen.HALF_WIDTH, 360, true);
 
             this.Main();

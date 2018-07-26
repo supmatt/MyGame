@@ -22,8 +22,9 @@ var scenes;
         // public methods
         Introduce.prototype.Introduce = function () {
             this._ocean = new objects.Ocean();
-            this._welcomeLabel = new objects.Label("Use the mouse control move of the actor", "80px", "Dock51", "#FFFF00", config.Screen.HALF_WIDTH, config.Screen.HALF_HEIGHT, true);
-            this._startButton = new objects.Button("StartButton", config.Screen.HALF_WIDTH, 360, true);
+            this._welcomeLabel = new objects.Label("Use the mouse controls the hero" + "/n" + "<br>to avoid the dangers on the road", "30px", "Dock51", "#FFFF00", config.Screen.HALF_WIDTH, config.Screen.HALF_HEIGHT, true);
+            // this._welcomeLabel2 = new objects.Label("Use the mouse controls the hero to avoid the dangers on the road", "30px", "Dock51", "#FFFF00", config.Screen.HALF_WIDTH, 300, true);
+            this._playButton = new objects.Button("StartButton", config.Screen.HALF_WIDTH, 360, true);
             this.Main();
         };
         Introduce.prototype.Update = function () {
@@ -38,8 +39,8 @@ var scenes;
             console.log("Starting - START SCENE");
             this.addChild(this._ocean);
             this.addChild(this._welcomeLabel);
-            this.addChild(this._startButton);
-            this._startButton.on("click", function () {
+            this.addChild(this._playButton);
+            this._playButton.on("click", function () {
                 managers.Game.CurrentState = config.Scene.PLAY;
             }, this);
         };

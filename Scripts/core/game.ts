@@ -44,7 +44,7 @@
     let Manifest = [
         {id: "textureAtlas", src:"/Assets/sprites/textureAtlas.png"},
         {id: "ocean", src:"/Assets/images/ocean.gif"},
-        {id: "rout", src:"/Assets/images/route.png"},
+        {id: "route", src:"/Assets/images/route.png"},
         {id: "yay", src:"/Assets/audio/yay.ogg"},
         {id: "thunder", src:"/Assets/audio/thunder.ogg"},
         {id: "engine", src:"/Assets/audio/engine.ogg"}
