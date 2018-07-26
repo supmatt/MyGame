@@ -40,7 +40,7 @@
             "RestartButton": { "frames": [2] },
             "StartButton": { "frames": [3] },
             "island": { "frames": [5] },
-            "plane": { "frames": [7, 4, 8, 6], "speed": 0.2 },
+            "plane": { "frames": [7, 4, 8, 6], "speed": 0.1 },
         }
     };
     var Manifest = [

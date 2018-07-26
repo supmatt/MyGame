@@ -22,7 +22,7 @@ var scenes;
         // public methods
         Start.prototype.Start = function () {
             this._route = new objects.Route();
-            this._welcomeLabel = new objects.Label("Street Adventure  ", "50px", "Dock51", "#FFFF00", config.Screen.HALF_WIDTH, config.Screen.HALF_HEIGHT, true);
+            this._welcomeLabel = new objects.Label("Street Adventure", "50px", "Dock51", "#FFFF00", config.Screen.HALF_WIDTH, config.Screen.HALF_HEIGHT, true);
             this._startButton = new objects.Button("StartButton", config.Screen.HALF_WIDTH, 360, true);
             this.Main();
         };

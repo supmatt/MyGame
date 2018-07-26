@@ -28,7 +28,7 @@ namespace objects {
     public Start(): void {
         this.regX = this.halfWidth;
         this.regY = this.halfHeight;
-        this.y = 430;
+        this.y = 400;
     }
 
     public Update(): void {

@@ -25,7 +25,7 @@ namespace objects {
     public Start(): void {
       this.regX = this.halfWidth;
       this.regY = this.halfHeight;
-      this._verticalSpeed = 5;
+      this._verticalSpeed = 2;
       this.Reset();
     }
 

@@ -32,7 +32,7 @@ var objects;
         Island.prototype.Start = function () {
             this.regX = this.halfWidth;
             this.regY = this.halfHeight;
-            this._verticalSpeed = 5;
+            this._verticalSpeed = 2;
             this.Reset();
         };
         Island.prototype.Update = function () {
