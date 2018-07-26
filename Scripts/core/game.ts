@@ -118,6 +118,10 @@
             case config.Scene.START:
             CurrentScene = new scenes.Start();
             break;
+            
+            case config.Scene.INTRODUCE:
+            CurrentScene = new scenes.Introduce();
+            break;
 
             case config.Scene.PLAY:
             CurrentScene = new scenes.Play();
