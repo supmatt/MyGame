@@ -3,7 +3,7 @@ module scenes {
         // member variables
         private _gameOverLabel: objects.Label;
         private _restartButton: objects.Button;
-        private _ocean: objects.Ocean;
+        private _route: objects.Route;
 
         // constructors
         constructor() {
@@ -16,7 +16,7 @@ module scenes {
 
         // public methods
         public Start():void {
-            this._ocean = new objects.Ocean();
+            this._route = new objects.Route();
 
             this._gameOverLabel = new objects.Label("Game Over!", "80px", "Dock51", "#FFFF00", config.Screen.HALF_WIDTH, 160, true);
             this._restartButton = new objects.Button("RestartButton", config.Screen.HALF_WIDTH, 360, true);
@@ -25,7 +25,7 @@ module scenes {
         }
 
         public Update():void {
-            this._ocean.Update();
+            this._route.Update();
         }
 
         public Reset():void {
@@ -39,7 +39,7 @@ module scenes {
         public Main():void {
             console.log(`Starting - END SCENE`);
 
-            this.addChild(this._ocean);
+            this.addChild(this._route);
 
             this.addChild(this._gameOverLabel);
 

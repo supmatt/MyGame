@@ -4,7 +4,7 @@ module scenes {
         private _welcomeLabel: objects.Label;
         
         private _startButton: objects.Button;
-        private _ocean: objects.Ocean;
+        // private _ocean: objects.Ocean;
         private _route: objects.Route;
 
         // constructors
@@ -19,16 +19,16 @@ module scenes {
         // public methods
         public Start():void {
 
-            this._ocean = new objects.Ocean();
+            this._route = new objects.Route();
 
-            this._welcomeLabel = new objects.Label("Street Adventure", "50px", "Dock51", "#FFFF00", config.Screen.HALF_WIDTH, config.Screen.HALF_HEIGHT, true);
+            this._welcomeLabel = new objects.Label("Street Adventure  ", "50px", "Dock51", "#FFFF00", config.Screen.HALF_WIDTH, config.Screen.HALF_HEIGHT, true);
             this._startButton = new objects.Button("StartButton", config.Screen.HALF_WIDTH, 360, true);
 
             this.Main();
         }
 
         public Update():void {
-            this._ocean.Update();
+            this._route.Update();
         }
 
         public Reset():void {
@@ -41,7 +41,7 @@ module scenes {
 
         public Main():void {
             console.log(`Starting - START SCENE`);
-            this.addChild(this._ocean);
+            this.addChild(this._route);
 
             this.addChild(this._welcomeLabel);
             this.addChild(this._startButton);

@@ -4,7 +4,7 @@ module scenes {
         private _welcomeLabel: objects.Label;
         private _welcomeLabel2: objects.Label;
         private _playButton: objects.Button;
-        private _ocean: objects.Ocean;
+        private _route: objects.Route;
 
         // constructors
         constructor() {
@@ -18,17 +18,17 @@ module scenes {
         // public methods
         public Introduce():void {
 
-            this._ocean = new objects.Ocean();
+            this._route = new objects.Route();
 
-            this._welcomeLabel = new objects.Label("Use the mouse controls the hero" + "/n" + "<br>to avoid the dangers on the road", "30px", "Dock51", "#FFFF00", config.Screen.HALF_WIDTH, config.Screen.HALF_HEIGHT, true);
-            // this._welcomeLabel2 = new objects.Label("Use the mouse controls the hero to avoid the dangers on the road", "30px", "Dock51", "#FFFF00", config.Screen.HALF_WIDTH, 300, true);
+            this._welcomeLabel = new objects.Label("Use the mouse controls the hero", "30px", "Dock51", "#FFFF00", config.Screen.HALF_WIDTH, 200, true);
+            this._welcomeLabel2 = new objects.Label("to avoid the dangers on the road", "30px", "Dock51", "#FFFF00", config.Screen.HALF_WIDTH, 250, true);
             this._playButton = new objects.Button("StartButton", config.Screen.HALF_WIDTH, 360, true);
 
             this.Main();
         }
 
         public Update():void {
-            this._ocean.Update();
+            this._route.Update();
         }
 
         public Reset():void {
@@ -41,9 +41,10 @@ module scenes {
 
         public Main():void {
             console.log(`Starting - START SCENE`);
-            this.addChild(this._ocean);
+            this.addChild(this._route);
 
             this.addChild(this._welcomeLabel);
+            this.addChild(this._welcomeLabel2);
             this.addChild(this._playButton);
 
             this._playButton.on("click", function(){

@@ -1,28 +1,34 @@
 {
 
 "images": [
+    "textureAtlas.png"
 ],
 
-"framerate": 60,
 "frames": [
-    [1, 1, 226, 178, 0, 0, 0],
-    [1, 181, 62, 63, 0, 0, 0],
-    [65, 181, 65, 65, 0, 0, 0],
-    [132, 181, 65, 65, 0, 0, 0],
-    [1, 248, 65, 65, 0, 0, 0],
-    [68, 248, 150, 50, 0, 0, 0],
-    [1, 315, 150, 50, 0, 0, 0]
+    [1, 1, 210, 594, 0, 0, 0],
+    [1, 597, 150, 150, 0, 0, 0],
+    [153, 597, 75, 101, 0, 0, 0],
+    [153, 700, 75, 101, 0, 0, 0],
+    [1, 749, 150, 50, 0, 0, 0],
+    [1, 801, 150, 50, 0, 0, 0],
+    [153, 803, 75, 54, 0, 0, -18],
+    [1, 853, 75, 54, 0, 0, -18]
 ],
 
 "animations": {
-    "cloud": { "frames": [0] },
-    "island": { "frames": [1] },
-    "plane": {
-        "frames": [2, 3, 4],
-        "speed": 0.2
-     },
-    "RestartButton": { "frames": [5] },
-    "StartButton": { "frames": [6] }
-}
+    "bus-top-view.hi": { "frames": [0] },
+    "shole": { "frames": [1] },
+    "run2": { "frames": [2] },
+    "run4": { "frames": [3] },
+    "RestartButton": { "frames": [4] },
+    "StartButton": { "frames": [5] },
+    "run1": { "frames": [6] },
+    "run3": { "frames": [7] }
+},
+
+"texturepacker": [
+        "SmartUpdateHash: $TexturePacker:SmartUpdate:cc412dc32c1e29150e63785af17003a0:3e531fcd97462a0c28e80f8bbd9e791b:2b5604bc88faefd55ddac16e9bce1532$",
+        "Created with TexturePacker (https://www.codeandweb.com/texturepacker) for EaselJS"
+]
 
 }

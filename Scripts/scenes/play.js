@@ -31,18 +31,18 @@ var scenes;
             this.engineSound.loop = -1;
             this.engineSound.volume = 0.1;
             this._plane = new objects.Plane();
-            this._ocean = new objects.Ocean();
+            this._route = new objects.Route();
             this._island = new objects.Island();
             // creates an empty array of type Cloud
             this._clouds = new Array();
-            this._cloudNum = 3;
+            this._cloudNum = 4;
             this._buildClouds();
             this.Main();
         };
         Play.prototype.Update = function () {
             var _this = this;
             this._plane.Update();
-            this._ocean.Update();
+            this._route.Update();
             this._island.Update();
             managers.Collision.check(this._plane, this._island);
             this._clouds.forEach(function (cloud) {
@@ -59,7 +59,7 @@ var scenes;
         Play.prototype.Main = function () {
             console.log("Starting - PLAY SCENE");
             // adding the ocean to the scene
-            this.addChild(this._ocean);
+            this.addChild(this._route);
             // adding the island to the scene
             this.addChild(this._island);
             // adding the plane to the scene

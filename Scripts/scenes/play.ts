@@ -2,7 +2,8 @@ module scenes {
     export class Play extends objects.Scene {
         // member variables
         private _plane:objects.Plane;
-        private _ocean:objects.Ocean;
+        // private _ocean:objects.Ocean;
+        private _route:objects.Route;
         private _island:objects.Island;
         private _clouds:objects.Cloud[];
         private _cloudNum:number;
@@ -32,12 +33,12 @@ module scenes {
 
 
             this._plane = new objects.Plane();
-            this._ocean = new objects.Ocean();
+            this._route = new objects.Route();
             this._island = new objects.Island();
 
             // creates an empty array of type Cloud
             this._clouds = new Array<objects.Cloud>();
-            this._cloudNum = 3;
+            this._cloudNum = 4;
 
             this._buildClouds();
            
@@ -46,7 +47,7 @@ module scenes {
 
         public Update():void {
             this._plane.Update();
-            this._ocean.Update();
+            this._route.Update();
             this._island.Update();
 
             managers.Collision.check(this._plane, this._island);
@@ -71,7 +72,7 @@ module scenes {
             console.log(`Starting - PLAY SCENE`);
 
             // adding the ocean to the scene
-            this.addChild(this._ocean);
+            this.addChild(this._route);
 
             // adding the island to the scene
             this.addChild(this._island);

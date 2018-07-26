@@ -69,19 +69,19 @@
         TextureAtlas = new createjs.SpriteSheet(textureData);
         managers.Game.TextureAtlas = TextureAtlas;
         stats = new Stats();
-        SetupStats();
+        //SetupStats();
         // This is where all the magic happens
         Main();
     }
     function Update() {
-        stats.begin();
+        //stats.begin();
         if (CurrentState != managers.Game.CurrentState) {
             CurrentState = managers.Game.CurrentState;
             Main();
         }
         CurrentScene.Update();
         stage.update();
-        stats.end();
+        //stats.end();
     }
     function Main() {
         console.log("%c Switching Scenes...", "font-style:italic; font-size:16px; color:blue;");

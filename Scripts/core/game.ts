@@ -86,14 +86,14 @@
         managers.Game.TextureAtlas = TextureAtlas;
 
         stats = new Stats();
-        SetupStats();
+        //SetupStats();
 
         // This is where all the magic happens
         Main();
     }
 
     function Update():void {
-        stats.begin();
+        //stats.begin();
         if(CurrentState != managers.Game.CurrentState) {
             CurrentState = managers.Game.CurrentState;
             Main();
@@ -103,7 +103,7 @@
 
         stage.update();
 
-        stats.end();
+        //stats.end();
     }
 
     function Main():void {
