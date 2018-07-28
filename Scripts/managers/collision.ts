@@ -8,6 +8,7 @@ namespace managers {
       let P2 = new math.Vec2(object2.x, object2.y);
 
       if (math.Vec2.Distance(P1, P2) < object1.halfHeight + object2.halfHeight) {
+        if(math.Vec2.Distance(P1, P2) < object1.halfWidth + object2.halfWidth){
         if (!object2.isColliding) {
           object2.isColliding = true;
             switch(object2.name) {
@@ -38,7 +39,7 @@ namespace managers {
                 
                 break;
             }
-
+          }
         }
       }
       else {
