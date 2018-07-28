@@ -35,7 +35,7 @@ var scenes;
             this._island = new objects.Island();
             // creates an empty array of type Cloud
             this._clouds = new Array();
-            this._cloudNum = 3;
+            this._cloudNum = 5;
             this._buildClouds();
             this.Main();
         };

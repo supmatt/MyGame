@@ -96,7 +96,7 @@ module managers {
         }
 
         public Reset() {
-            this.Lives = 5;
+            this.Lives = 3;
             this.Score = 0;
         }
     }

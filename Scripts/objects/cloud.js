@@ -40,10 +40,11 @@ var objects;
             this._checkBounds();
         };
         Cloud.prototype.Reset = function () {
-            this._verticalSpeed = Math.floor((Math.random() * 5) + 5); // between 5 and 10 ppf
-            this._horizontalSpeed = Math.floor((Math.random() * 4) - 2); // between -2 and 2 ppf
+            this._verticalSpeed = Math.floor((Math.random() * 5) + 3); // between 5 and 10 ppf
+            this._horizontalSpeed = 0; //Math.floor((Math.random() * 4) -2); // between -2 and 2 ppf
             this.y = -this.height;
-            this.x = Math.floor((Math.random() * (config.Screen.WIDTH - this.width)) + this.halfWidth);
+            this.x = Math.floor((Math.random() * 7)) * 85 + this.halfWidth + 20;
+            // this.x = Math.floor((Math.random() * (config.Screen.WIDTH - this.width)) + this.halfWidth);
         };
         return Cloud;
     }(objects.GameObject));
