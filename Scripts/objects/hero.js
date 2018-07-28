@@ -21,6 +21,12 @@ var objects;
             _this.Start();
             return _this;
         }
+        Hero.prototype._animationEnded = function () {
+            if (this.alpha == 0) {
+                this.alpha = 1;
+                this.planeFlash.alpha = 0;
+            }
+        };
         // private methods
         Hero.prototype._checkBounds = function () {
             // check right boundary
@@ -34,6 +40,9 @@ var objects;
         };
         // public methods
         Hero.prototype.Start = function () {
+            this.planeFlash = new objects.PlaneFlash();
+            this.planeFlash.alpha = 1;
+            this.planeFlash.on("animationend", this._animationEnded.bind(this), false);
             this.regX = this.halfWidth;
             this.regY = this.halfHeight;
             this.y = 430;

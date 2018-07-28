@@ -16,9 +16,21 @@ var managers;
                             managers.Game.ScoreBoard.Score += 100;
                             break;
                         case "cloud":
+                            createjs.Sound.play("explosion");
                             var thunderSound = createjs.Sound.play("thunder");
                             thunderSound.volume = 0.2;
                             managers.Game.ScoreBoard.Lives -= 1;
+                            // if (object1.alpha != 0) {
+                            //   createjs.Sound.play("explosion");
+                            //   managers.Game.ScoreBoard.Lives -= 1;
+                            //   let explosion = new objects.Explosion("explosion");
+                            //   explosion.x = object1.x;
+                            //   explosion.y = object1.y;
+                            //   managers.Game.currentSceneObject.addChild(explosion);
+                            //   object1.alpha = 0; // make the plane object invisible
+                            //   managers.Game.hero.planeFlash.alpha = 1;
+                            //   managers.Game.hero.planeFlash.gotoAndPlay("planeflash");
+                            // }
                             break;
                     }
                 }

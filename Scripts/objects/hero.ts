@@ -1,6 +1,6 @@
 namespace objects {
     export class Hero extends objects.GameObject {
-      
+        public planeFlash: objects.PlaneFlash;
       /**
        * Creates an instance of Hero.
        * @memberof Hero
@@ -9,6 +9,12 @@ namespace objects {
         super("hero");
   
         this.Start();
+      }
+      private _animationEnded():void {
+        if(this.alpha == 0) {
+          this.alpha = 1;
+          this.planeFlash.alpha = 0;
+        }
       }
   
       // private methods
@@ -26,6 +32,10 @@ namespace objects {
   
       // public methods
       public Start(): void {
+        this.planeFlash = new objects.PlaneFlash();
+        this.planeFlash.alpha = 1;
+        this.planeFlash.on("animationend", this._animationEnded.bind(this), false );
+  
           this.regX = this.halfWidth;
           this.regY = this.halfHeight;
           this.y = 430;
