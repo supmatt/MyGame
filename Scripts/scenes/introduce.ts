@@ -24,7 +24,7 @@ module scenes {
             this._welcomeLabel = new objects.Label("Use the mouse controls the hero or moto", "30px", "Dock51", "#FFFF00", config.Screen.HALF_WIDTH, 180, true);
             this._welcomeLabel2 = new objects.Label("to avoid the dangers on the road", "30px", "Dock51", "#FFFF00", config.Screen.HALF_WIDTH, 230, true);
             this._playButton = new objects.Button("HeroButton", config.Screen.HALF_WIDTH, 330, true);
-            this._playButton2 = new objects.Button("MotoButton", config.Screen.HALF_WIDTH, 420, true);
+            this._playButton2 = new objects.Button("MotoButton", config.Screen.HALF_WIDTH, 400, true);
 
             this.Main();
         }

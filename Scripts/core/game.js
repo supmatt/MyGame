@@ -28,25 +28,6 @@
             [189, 369, 49, 66, 0, -1, 0],
             [189, 437, 49, 66, 0, 0, 0]
         ],
-        // "animations": {
-        //     "cloud": { "frames": [0] },
-        //     "island": { "frames": [1] },
-        //     "plane": {
-        //         "frames": [2, 3, 4],
-        //         "speed": 0.2
-        //      },
-        //     "RestartButton": { "frames": [5] },
-        //     "StartButton": { "frames": [6] }
-        // }
-        // "animations": {
-        //     "hole": { "frames": [0] },
-        //     "cloud": { "frames": [1,2],"speed": 0.1 },
-        //     "RestartButton": { "frames": [3] },
-        //     "StartButton": { "frames": [4] },
-        //     "island": { "frames": [5] },
-        //     "plane": { "frames": [8,6,8,7],"speed": 0.1 },
-        //     "moto": { "frames": [1,2],"speed": 0.1 },
-        // }
         "animations": {
             "hole": { "frames": [0] },
             "island": { "frames": [1] },
@@ -61,11 +42,7 @@
     };
     var Manifest = [
         { id: "textureAtlas", src: "/Assets/sprites/textureAtlas.png" },
-        { id: "ocean", src: "/Assets/images/ocean.gif" },
         { id: "route", src: "/Assets/images/route.png" },
-        { id: "yay", src: "/Assets/audio/yay.ogg" },
-        { id: "thunder", src: "/Assets/audio/thunder.ogg" },
-        { id: "engine", src: "/Assets/audio/engine.ogg" },
         { id: "bbackground", src: "/Assets/audio/1-1.mp3" },
         { id: "bbbackground", src: "/Assets/audio/1-2.mp3" },
         { id: "bbon", src: "/Assets/audio/2.mp3" },
