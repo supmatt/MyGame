@@ -6,30 +6,38 @@
 
 "frames": [
     [1, 1, 150, 150, 0, 0, 0],
-    [153, 1, 92, 166, 0, 0, 0],
-    [1, 153, 92, 166, 0, 0, 0],
-    [95, 169, 150, 50, 0, 0, 0],
-    [95, 221, 150, 50, 0, 0, 0],
-    [95, 273, 88, 100, 0, -1, 0],
-    [1, 321, 49, 66, 0, -1, 0],
-    [185, 273, 49, 66, 0, 0, 0],
-    [185, 341, 50, 36, 0, 0, -13]
+    [153, 1, 88, 100, 0, -1, 0],
+    [153, 103, 50, 115, 0, 0, 0],
+    [1, 153, 150, 50, 0, 0, 0],
+    [1, 205, 150, 50, 0, 0, 0],
+    [153, 220, 50, 109, 0, 0, 0],
+    [1, 257, 150, 50, 0, 0, 0],
+    [1, 309, 150, 50, 0, 0, 0],
+    [1, 361, 92, 166, 0, 0, 0],
+    [95, 361, 92, 166, 0, 0, 0],
+    [189, 331, 50, 36, 0, 0, -13],
+    [189, 369, 49, 66, 0, -1, 0],
+    [189, 437, 49, 66, 0, 0, 0]
 ],
 
 "animations": {
-    "hole": { "frames": [0] },
-    "Police1": { "frames": [1] },
-    "Police2": { "frames": [2] },
-    "RestartButton": { "frames": [3] },
-    "StartButton": { "frames": [4] },
-    "Bon": { "frames": [5] },
-    "run2": { "frames": [6] },
-    "run4": { "frames": [7] },
-    "run1": { "frames": [8] }
+    "shole": { "frames": [0] },
+    "Bon": { "frames": [1] },
+    "moto2": { "frames": [2] },
+    "HeroButton": { "frames": [3] },
+    "MotoButton": { "frames": [4] },
+    "moto1": { "frames": [5] },
+    "RestarttButton": { "frames": [6] },
+    "StartButton": { "frames": [7] },
+    "Police1": { "frames": [8] },
+    "Police2": { "frames": [9] },
+    "run1": { "frames": [10] },
+    "run2": { "frames": [11] },
+    "run4": { "frames": [12] }
 },
 
 "texturepacker": [
-        "SmartUpdateHash: $TexturePacker:SmartUpdate:5a001783548160d15ba5255f4fa9fe4c:c66ce54c1f412999173c627828054559:2b5604bc88faefd55ddac16e9bce1532$",
+        "SmartUpdateHash: $TexturePacker:SmartUpdate:94054a7f53eb47045db06ecfdc46c2fd:6d512c9aefcdad9314caee244f6dc4dc:2b5604bc88faefd55ddac16e9bce1532$",
         "Created with TexturePacker (https://www.codeandweb.com/texturepacker) for EaselJS"
 ]
 

@@ -15,14 +15,18 @@
         "framerate": 60,
         "frames": [
             [1, 1, 150, 150, 0, 0, 0],
-            [153, 1, 92, 166, 0, 0, 0],
-            [1, 153, 92, 166, 0, 0, 0],
-            [95, 169, 150, 50, 0, 0, 0],
-            [95, 221, 150, 50, 0, 0, 0],
-            [95, 273, 88, 100, 0, -1, 0],
-            [1, 321, 49, 66, 0, -1, 0],
-            [185, 273, 49, 66, 0, 0, 0],
-            [185, 341, 50, 36, 0, 0, -13]
+            [153, 1, 88, 100, 0, -1, 0],
+            [153, 103, 50, 115, 0, 0, 0],
+            [1, 153, 150, 50, 0, 0, 0],
+            [1, 205, 150, 50, 0, 0, 0],
+            [153, 220, 50, 109, 0, 0, 0],
+            [1, 257, 150, 50, 0, 0, 0],
+            [1, 309, 150, 50, 0, 0, 0],
+            [1, 361, 92, 166, 0, 0, 0],
+            [95, 361, 92, 166, 0, 0, 0],
+            [189, 331, 50, 36, 0, 0, -13],
+            [189, 369, 49, 66, 0, -1, 0],
+            [189, 437, 49, 66, 0, 0, 0]
         ],
         // "animations": {
         //     "cloud": { "frames": [0] },
@@ -34,15 +38,26 @@
         //     "RestartButton": { "frames": [5] },
         //     "StartButton": { "frames": [6] }
         // }
+        // "animations": {
+        //     "hole": { "frames": [0] },
+        //     "cloud": { "frames": [1,2],"speed": 0.1 },
+        //     "RestartButton": { "frames": [3] },
+        //     "StartButton": { "frames": [4] },
+        //     "island": { "frames": [5] },
+        //     "plane": { "frames": [8,6,8,7],"speed": 0.1 },
+        //     "moto": { "frames": [1,2],"speed": 0.1 },
+        // }
         "animations": {
             "hole": { "frames": [0] },
-            "cloud": { "frames": [1, 2], "speed": 0.1 },
-            "RestartButton": { "frames": [3] },
-            "StartButton": { "frames": [4] },
-            "island": { "frames": [5] },
-            "plane": { "frames": [8, 6, 8, 7], "speed": 0.1 },
-            "moto": { "frames": [1, 2], "speed": 0.1 },
-        }
+            "island": { "frames": [1] },
+            "HeroButton": { "frames": [3] },
+            "MotoButton": { "frames": [4] },
+            "moto": { "frames": [5, 2], "speed": 0.1 },
+            "RestartButton": { "frames": [6] },
+            "StartButton": { "frames": [7] },
+            "cloud": { "frames": [8, 9], "speed": 0.1 },
+            "plane": { "frames": [10, 11, 10, 12], "speed": 0.1 }
+        },
     };
     var Manifest = [
         { id: "textureAtlas", src: "/Assets/sprites/textureAtlas.png" },

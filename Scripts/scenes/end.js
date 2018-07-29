@@ -22,8 +22,8 @@ var scenes;
         // public methods
         End.prototype.Start = function () {
             this._route = new objects.Route();
-            this._gameOverLabel = new objects.Label("Game Over!", "80px", "Dock51", "#FFFF00", config.Screen.HALF_WIDTH, 160, true);
-            this._restartButton = new objects.Button("RestartButton", config.Screen.HALF_WIDTH, 360, true);
+            this._gameOverLabel = new objects.Label("Good Job !!", "80px", "Dock51", "#FFFF00", config.Screen.HALF_WIDTH, 160, true);
+            this._restartButton = new objects.Button("RestartButton", config.Screen.HALF_WIDTH, 380, true);
             this.Main();
         };
         End.prototype.Update = function () {

@@ -22,10 +22,10 @@ var scenes;
         // public methods
         Introduce.prototype.Introduce = function () {
             this._route = new objects.Route();
-            this._welcomeLabel = new objects.Label("Use the mouse controls the hero", "30px", "Dock51", "#FFFF00", config.Screen.HALF_WIDTH, 200, true);
-            this._welcomeLabel2 = new objects.Label("to avoid the dangers on the road", "30px", "Dock51", "#FFFF00", config.Screen.HALF_WIDTH, 250, true);
-            this._playButton = new objects.Button("StartButton", config.Screen.HALF_WIDTH, 350, true);
-            this._playButton2 = new objects.Button("StartButton", config.Screen.HALF_WIDTH, 400, true);
+            this._welcomeLabel = new objects.Label("Use the mouse controls the hero or moto", "30px", "Dock51", "#FFFF00", config.Screen.HALF_WIDTH, 180, true);
+            this._welcomeLabel2 = new objects.Label("to avoid the dangers on the road", "30px", "Dock51", "#FFFF00", config.Screen.HALF_WIDTH, 230, true);
+            this._playButton = new objects.Button("HeroButton", config.Screen.HALF_WIDTH, 330, true);
+            this._playButton2 = new objects.Button("MotoButton", config.Screen.HALF_WIDTH, 420, true);
             this.Main();
         };
         Introduce.prototype.Update = function () {

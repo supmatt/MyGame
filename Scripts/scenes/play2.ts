@@ -28,7 +28,7 @@ module scenes {
 
         // public methods
         public Start():void {
-            this.engineSound = createjs.Sound.play("bbackground");
+            this.engineSound = createjs.Sound.play("bbbackground");
             this.engineSound.loop = -1;
             this.engineSound.volume = 0.1;
 

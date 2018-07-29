@@ -27,7 +27,7 @@ var scenes;
         };
         // public methods
         Play2.prototype.Start = function () {
-            this.engineSound = createjs.Sound.play("bbackground");
+            this.engineSound = createjs.Sound.play("bbbackground");
             this.engineSound.loop = -1;
             this.engineSound.volume = 0.1;
             this._moto = new objects.Moto();
