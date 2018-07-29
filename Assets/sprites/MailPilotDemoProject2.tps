@@ -4,9 +4,7 @@
         <key>fileFormatVersion</key>
         <int>4</int>
         <key>texturePackerVersion</key>
-        <string>4.6.1</string>
-        <key>fileName</key>
-        <string>C:/Users/MATT/Desktop/MM/MailPilotDemoProject.tps</string>
+        <string>4.8.2</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">
@@ -36,7 +34,7 @@
         <key>dataFormat</key>
         <string>easeljs</string>
         <key>textureFileName</key>
-        <filename>../MyGame/Assets/sprites/textureAtlas.png</filename>
+        <filename>textureAtlas.png</filename>
         <key>flipPVR</key>
         <false/>
         <key>pvrCompressionQuality</key>
@@ -104,11 +102,11 @@
         <key>algorithmSettings</key>
         <struct type="AlgorithmSettings">
             <key>algorithm</key>
-            <enum type="AlgorithmSettings::AlgorithmId">MaxRects</enum>
+            <enum type="AlgorithmSettings::AlgorithmId">Basic</enum>
             <key>freeSizeMode</key>
             <enum type="AlgorithmSettings::AlgorithmFreeSizeMode">Best</enum>
             <key>sizeConstraints</key>
-            <enum type="AlgorithmSettings::SizeConstraints">AnySize</enum>
+            <enum type="AlgorithmSettings::SizeConstraints">POT</enum>
             <key>forceSquared</key>
             <false/>
             <key>maxRects</key>
@@ -119,7 +117,7 @@
             <key>basic</key>
             <struct type="AlgorithmBasicSettings">
                 <key>sortBy</key>
-                <enum type="AlgorithmBasicSettings::SortBy">Best</enum>
+                <enum type="AlgorithmBasicSettings::SortBy">Name</enum>
                 <key>order</key>
                 <enum type="AlgorithmBasicSettings::Order">Ascending</enum>
             </struct>
@@ -129,28 +127,12 @@
                 <uint>1</uint>
             </struct>
         </struct>
-        <key>andEngine</key>
-        <struct type="AndEngine">
-            <key>minFilter</key>
-            <enum type="AndEngine::MinFilter">Linear</enum>
-            <key>packageName</key>
-            <string>Texture</string>
-            <key>wrap</key>
-            <struct type="AndEngineWrap">
-                <key>s</key>
-                <enum type="AndEngineWrap::Wrap">Clamp</enum>
-                <key>t</key>
-                <enum type="AndEngineWrap::Wrap">Clamp</enum>
-            </struct>
-            <key>magFilter</key>
-            <enum type="AndEngine::MagFilter">MagLinear</enum>
-        </struct>
         <key>dataFileNames</key>
         <map type="GFileNameMap">
             <key>json</key>
             <struct type="DataFile">
                 <key>name</key>
-                <filename>../MyGame/Assets/sprites/textureAtlas.json</filename>
+                <filename>textureAtlas.json</filename>
             </struct>
         </map>
         <key>multiPack</key>
@@ -167,7 +149,7 @@
             <string></string>
         </struct>
         <key>autoAliasEnabled</key>
-        <false/>
+        <true/>
         <key>trimSpriteNames</key>
         <false/>
         <key>prependSmartFolderName</key>
@@ -187,7 +169,7 @@
             <key>trimMargin</key>
             <uint>1</uint>
             <key>trimMode</key>
-            <enum type="SpriteSettings::TrimMode">Trim</enum>
+            <enum type="SpriteSettings::TrimMode">None</enum>
             <key>tracerTolerance</key>
             <int>200</int>
             <key>heuristicMask</key>
@@ -199,23 +181,8 @@
         </struct>
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
-            <key type="filename">../Bon.png</key>
-            <struct type="IndividualSpriteSettings">
-                <key>pivotPoint</key>
-                <point_f>0.5,0.5</point_f>
-                <key>scale9Enabled</key>
-                <false/>
-                <key>scale9Borders</key>
-                <rect>23,25,45,50</rect>
-                <key>scale9Paddings</key>
-                <rect>23,25,45,50</rect>
-                <key>scale9FromFile</key>
-                <false/>
-            </struct>
-            <key type="filename">../HeroButton.png</key>
-            <key type="filename">../MotoButton.png</key>
-            <key type="filename">../RestarttButton.png</key>
-            <key type="filename">../StartButton.png</key>
+            <key type="filename">../images/RestartButton.png</key>
+            <key type="filename">../images/StartButton.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -228,78 +195,57 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">../Police1.png</key>
-            <key type="filename">../Police2.png</key>
+            <key type="filename">../images/cloud.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
                 <key>scale9Enabled</key>
                 <false/>
                 <key>scale9Borders</key>
-                <rect>23,42,46,83</rect>
+                <rect>57,45,113,89</rect>
                 <key>scale9Paddings</key>
-                <rect>23,42,46,83</rect>
+                <rect>57,45,113,89</rect>
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">../moto1.png</key>
-            <key type="filename">../moto2.png</key>
+            <key type="filename">../images/island.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
                 <key>scale9Enabled</key>
                 <false/>
                 <key>scale9Borders</key>
-                <rect>13,29,25,57</rect>
+                <rect>16,16,31,31</rect>
                 <key>scale9Paddings</key>
-                <rect>13,29,25,57</rect>
+                <rect>16,16,31,31</rect>
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">../shole.png</key>
+            <key type="filename">../images/plane1.png</key>
+            <key type="filename">../images/plane2.png</key>
+            <key type="filename">../images/plane3.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
                 <key>scale9Enabled</key>
                 <false/>
                 <key>scale9Borders</key>
-                <rect>38,38,75,75</rect>
+                <rect>16,16,33,33</rect>
                 <key>scale9Paddings</key>
-                <rect>38,38,75,75</rect>
-                <key>scale9FromFile</key>
-                <false/>
-            </struct>
-            <key type="filename">D:/2.2semestre/Gaming/Assessment2/run/r/run1.png</key>
-            <key type="filename">D:/2.2semestre/Gaming/Assessment2/run/r/run2.png</key>
-            <key type="filename">D:/2.2semestre/Gaming/Assessment2/run/r/run4.png</key>
-            <struct type="IndividualSpriteSettings">
-                <key>pivotPoint</key>
-                <point_f>0.5,0.5</point_f>
-                <key>scale9Enabled</key>
-                <false/>
-                <key>scale9Borders</key>
-                <rect>13,17,25,33</rect>
-                <key>scale9Paddings</key>
-                <rect>13,17,25,33</rect>
+                <rect>16,16,33,33</rect>
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
         </map>
         <key>fileList</key>
         <array>
-            <filename>../shole.png</filename>
-            <filename>../Bon.png</filename>
-            <filename>D:/2.2semestre/Gaming/Assessment2/run/r/run1.png</filename>
-            <filename>D:/2.2semestre/Gaming/Assessment2/run/r/run2.png</filename>
-            <filename>D:/2.2semestre/Gaming/Assessment2/run/r/run4.png</filename>
-            <filename>../Police1.png</filename>
-            <filename>../Police2.png</filename>
-            <filename>../StartButton.png</filename>
-            <filename>../HeroButton.png</filename>
-            <filename>../MotoButton.png</filename>
-            <filename>../RestarttButton.png</filename>
-            <filename>../moto1.png</filename>
-            <filename>../moto2.png</filename>
+            <filename>../images/island.png</filename>
+            <filename>../images/cloud.png</filename>
+            <filename>../images/StartButton.png</filename>
+            <filename>../images/RestartButton.png</filename>
+            <filename>../images/plane1.png</filename>
+            <filename>../images/plane2.png</filename>
+            <filename>../images/plane3.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>
@@ -322,6 +268,12 @@
         <key>normalMapSheetFileName</key>
         <filename></filename>
         <key>exporterProperties</key>
-        <map type="ExporterProperties"/>
+        <map type="ExporterProperties">
+            <key>easeljs::framerate</key>
+            <struct type="ExporterProperty">
+                <key>value</key>
+                <string>20</string>
+            </struct>
+        </map>
     </struct>
 </data>
