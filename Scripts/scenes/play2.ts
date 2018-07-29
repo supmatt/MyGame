@@ -1,7 +1,7 @@
 module scenes {
-    export class Play extends objects.Scene {
+    export class Play2 extends objects.Scene {
         // member variables
-        private _plane:objects.Plane;
+        private _moto:objects.Moto;
         // private _ocean:objects.Ocean;
         private _route:objects.Route;
         private _island:objects.Island;
@@ -33,7 +33,7 @@ module scenes {
             this.engineSound.volume = 0.1;
 
 
-            this._plane = new objects.Plane();
+            this._moto = new objects.Moto();
             this._route = new objects.Route();
             this._island = new objects.Island();
             this._hole = new objects.Hole();
@@ -48,17 +48,17 @@ module scenes {
         }
 
         public Update():void {
-            this._plane.Update();
+            this._moto.Update();
             this._route.Update();
             this._island.Update();
             this._hole.Update();
 
-            managers.Collision.check(this._plane, this._island);
-            managers.Collision.check(this._plane, this._hole);
+            managers.Collision.check(this._moto, this._island);
+            managers.Collision.check(this._moto, this._hole);
 
             this._clouds.forEach(cloud => {
                 cloud.Update();
-                managers.Collision.check(this._plane, cloud);
+                managers.Collision.check(this._moto, cloud);
             });
             
         }
@@ -83,7 +83,7 @@ module scenes {
             this.addChild(this._hole);
 
             // adding the plane to the scene
-            this.addChild(this._plane);
+            this.addChild(this._moto);
 
             // adding the cloud to the scene
             for (const cloud of this._clouds) {

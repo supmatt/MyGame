@@ -10,27 +10,27 @@ var __extends = (this && this.__extends) || (function () {
 })();
 var scenes;
 (function (scenes) {
-    var Play = /** @class */ (function (_super) {
-        __extends(Play, _super);
+    var Play2 = /** @class */ (function (_super) {
+        __extends(Play2, _super);
         // constructors
-        function Play() {
+        function Play2() {
             var _this = _super.call(this) || this;
             _this.Start();
             return _this;
         }
         // private methods
-        Play.prototype._buildClouds = function () {
+        Play2.prototype._buildClouds = function () {
             for (var count = 0; count < this._cloudNum; count++) {
                 this._clouds.push(new objects.Cloud());
                 //this._clouds[count] = new objects.Cloud();
             }
         };
         // public methods
-        Play.prototype.Start = function () {
+        Play2.prototype.Start = function () {
             this.engineSound = createjs.Sound.play("bbackground");
             this.engineSound.loop = -1;
             this.engineSound.volume = 0.1;
-            this._plane = new objects.Plane();
+            this._moto = new objects.Moto();
             this._route = new objects.Route();
             this._island = new objects.Island();
             this._hole = new objects.Hole();
@@ -40,26 +40,26 @@ var scenes;
             this._buildClouds();
             this.Main();
         };
-        Play.prototype.Update = function () {
+        Play2.prototype.Update = function () {
             var _this = this;
-            this._plane.Update();
+            this._moto.Update();
             this._route.Update();
             this._island.Update();
             this._hole.Update();
-            managers.Collision.check(this._plane, this._island);
-            managers.Collision.check(this._plane, this._hole);
+            managers.Collision.check(this._moto, this._island);
+            managers.Collision.check(this._moto, this._hole);
             this._clouds.forEach(function (cloud) {
                 cloud.Update();
-                managers.Collision.check(_this._plane, cloud);
+                managers.Collision.check(_this._moto, cloud);
             });
         };
-        Play.prototype.Reset = function () {
+        Play2.prototype.Reset = function () {
         };
-        Play.prototype.Destroy = function () {
+        Play2.prototype.Destroy = function () {
             this.engineSound.stop();
             this.removeAllChildren();
         };
-        Play.prototype.Main = function () {
+        Play2.prototype.Main = function () {
             console.log("Starting - PLAY SCENE");
             // adding the ocean to the scene
             this.addChild(this._route);
@@ -67,7 +67,7 @@ var scenes;
             this.addChild(this._island);
             this.addChild(this._hole);
             // adding the plane to the scene
-            this.addChild(this._plane);
+            this.addChild(this._moto);
             // adding the cloud to the scene
             for (var _i = 0, _a = this._clouds; _i < _a.length; _i++) {
                 var cloud = _a[_i];
@@ -76,8 +76,8 @@ var scenes;
             this.addChild(managers.Game.ScoreBoard.LivesLabel);
             this.addChild(managers.Game.ScoreBoard.ScoreLabel);
         };
-        return Play;
+        return Play2;
     }(objects.Scene));
-    scenes.Play = Play;
+    scenes.Play2 = Play2;
 })(scenes || (scenes = {}));
-//# sourceMappingURL=play.js.map
+//# sourceMappingURL=play2.js.map

@@ -8,6 +8,7 @@ module managers {
         public static TextureAtlas:createjs.SpriteSheet;
         public static currentSceneObject: objects.Scene;
         public static plane: objects.Plane;
+        public static moto: objects.Moto;
         public static hero: objects.Hero;
     }
 }

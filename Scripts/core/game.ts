@@ -40,14 +40,14 @@
         //     "StartButton": { "frames": [6] }
         // }
         "animations": {
-            "shole": { "frames": [0] },
+            "hole": { "frames": [0] },
             "cloud": { "frames": [1,2],"speed": 0.1 },
            
             "RestartButton": { "frames": [3] },
             "StartButton": { "frames": [4] },
             "island": { "frames": [5] },
             "plane": { "frames": [8,6,8,7],"speed": 0.1 },
-
+            "moto": { "frames": [1,2],"speed": 0.1 },
         }
         };
         
@@ -58,7 +58,12 @@
         {id: "route", src:"/Assets/images/route.png"},
         {id: "yay", src:"/Assets/audio/yay.ogg"},
         {id: "thunder", src:"/Assets/audio/thunder.ogg"},
-        {id: "engine", src:"/Assets/audio/engine.ogg"}
+        {id: "engine", src:"/Assets/audio/engine.ogg"},
+        {id: "bbackground", src:"/Assets/audio/1-1.mp3"},
+        {id: "bbbackground", src:"/Assets/audio/1-2.mp3"},
+        {id: "bbon", src:"/Assets/audio/2.mp3"},
+        {id: "hhole", src:"/Assets/audio/3.mp3"},
+        {id: "ppolice", src:"/Assets/audio/4.mp3"}
     ]
 
     function SetupStats() {
@@ -136,6 +141,10 @@
 
             case config.Scene.PLAY:
             CurrentScene = new scenes.Play();
+            break;
+
+            case config.Scene.PLAY2:
+            CurrentScene = new scenes.Play2();
             break;
 
             case config.Scene.END:

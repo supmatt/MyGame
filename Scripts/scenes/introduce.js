@@ -24,7 +24,8 @@ var scenes;
             this._route = new objects.Route();
             this._welcomeLabel = new objects.Label("Use the mouse controls the hero", "30px", "Dock51", "#FFFF00", config.Screen.HALF_WIDTH, 200, true);
             this._welcomeLabel2 = new objects.Label("to avoid the dangers on the road", "30px", "Dock51", "#FFFF00", config.Screen.HALF_WIDTH, 250, true);
-            this._playButton = new objects.Button("StartButton", config.Screen.HALF_WIDTH, 360, true);
+            this._playButton = new objects.Button("StartButton", config.Screen.HALF_WIDTH, 350, true);
+            this._playButton2 = new objects.Button("StartButton", config.Screen.HALF_WIDTH, 400, true);
             this.Main();
         };
         Introduce.prototype.Update = function () {
@@ -41,8 +42,12 @@ var scenes;
             this.addChild(this._welcomeLabel);
             this.addChild(this._welcomeLabel2);
             this.addChild(this._playButton);
+            this.addChild(this._playButton2);
             this._playButton.on("click", function () {
                 managers.Game.CurrentState = config.Scene.PLAY;
+            }, this);
+            this._playButton2.on("click", function () {
+                managers.Game.CurrentState = config.Scene.PLAY2;
             }, this);
         };
         return Introduce;

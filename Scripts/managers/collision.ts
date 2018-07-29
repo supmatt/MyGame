@@ -3,6 +3,7 @@ namespace managers {
     public static check(
       object1: objects.GameObject,
       object2: objects.GameObject
+      
     ): void {
       let P1 = new math.Vec2(object1.x, object1.y);
       let P2 = new math.Vec2(object2.x, object2.y);
@@ -13,14 +14,19 @@ namespace managers {
           object2.isColliding = true;
             switch(object2.name) {
                 case "island":
-                let yaySound = createjs.Sound.play("yay");
+                let yaySound = createjs.Sound.play("bbon");
                 yaySound.volume = 0.2;
                 managers.Game.ScoreBoard.Score += 100;
+                break;
+                case "hole":
+                let yaSound = createjs.Sound.play("hhole");
+                yaSound.volume = 0.2;
+                managers.Game.ScoreBoard.Lives -= 1;
                 break;
 
                 case "cloud":
                 createjs.Sound.play("explosion");
-                let thunderSound = createjs.Sound.play("thunder");
+                let thunderSound = createjs.Sound.play("ppolice");
                 thunderSound.volume = 0.2;
                 managers.Game.ScoreBoard.Lives -= 1;
                 // if (object1.alpha != 0) {

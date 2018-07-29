@@ -4,6 +4,7 @@ module scenes {
         private _welcomeLabel: objects.Label;
         private _welcomeLabel2: objects.Label;
         private _playButton: objects.Button;
+        private _playButton2: objects.Button;
         private _route: objects.Route;
 
         // constructors
@@ -22,7 +23,8 @@ module scenes {
 
             this._welcomeLabel = new objects.Label("Use the mouse controls the hero", "30px", "Dock51", "#FFFF00", config.Screen.HALF_WIDTH, 200, true);
             this._welcomeLabel2 = new objects.Label("to avoid the dangers on the road", "30px", "Dock51", "#FFFF00", config.Screen.HALF_WIDTH, 250, true);
-            this._playButton = new objects.Button("StartButton", config.Screen.HALF_WIDTH, 360, true);
+            this._playButton = new objects.Button("StartButton", config.Screen.HALF_WIDTH, 350, true);
+            this._playButton2 = new objects.Button("StartButton", config.Screen.HALF_WIDTH, 400, true);
 
             this.Main();
         }
@@ -46,9 +48,13 @@ module scenes {
             this.addChild(this._welcomeLabel);
             this.addChild(this._welcomeLabel2);
             this.addChild(this._playButton);
+            this.addChild(this._playButton2);
 
             this._playButton.on("click", function(){
                 managers.Game.CurrentState = config.Scene.PLAY;
+            }, this);
+            this._playButton2.on("click", function(){
+                managers.Game.CurrentState = config.Scene.PLAY2;
             }, this);
         }
     }

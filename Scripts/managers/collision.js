@@ -12,13 +12,18 @@ var managers;
                         object2.isColliding = true;
                         switch (object2.name) {
                             case "island":
-                                var yaySound = createjs.Sound.play("yay");
+                                var yaySound = createjs.Sound.play("bbon");
                                 yaySound.volume = 0.2;
                                 managers.Game.ScoreBoard.Score += 100;
                                 break;
+                            case "hole":
+                                var yaSound = createjs.Sound.play("hhole");
+                                yaSound.volume = 0.2;
+                                managers.Game.ScoreBoard.Lives -= 1;
+                                break;
                             case "cloud":
                                 createjs.Sound.play("explosion");
-                                var thunderSound = createjs.Sound.play("thunder");
+                                var thunderSound = createjs.Sound.play("ppolice");
                                 thunderSound.volume = 0.2;
                                 managers.Game.ScoreBoard.Lives -= 1;
                                 // if (object1.alpha != 0) {

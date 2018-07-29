@@ -17,7 +17,7 @@
 ],
 
 "animations": {
-    "shole": { "frames": [0] },
+    "hole": { "frames": [0] },
     "Police1": { "frames": [1] },
     "Police2": { "frames": [2] },
     "RestartButton": { "frames": [3] },

@@ -49,7 +49,7 @@ module scenes {
 
             this._restartButton.on("click", function(){
                 managers.Game.ScoreBoard.Reset();
-                managers.Game.CurrentState = config.Scene.PLAY;
+                managers.Game.CurrentState = config.Scene.INTRODUCE;
             }, this);
         }
     }
