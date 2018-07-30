@@ -6,7 +6,7 @@
         <key>texturePackerVersion</key>
         <string>4.6.1</string>
         <key>fileName</key>
-        <string>C:/Users/MATT/Desktop/MM/MailPilotDemoProject.tps</string>
+        <string>C:/Users/MATT/Desktop/MyGame/Assets/sprites/MailPilotDemoProject.tps</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">
@@ -199,23 +199,12 @@
         </struct>
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
-            <key type="filename">../Bon.png</key>
-            <struct type="IndividualSpriteSettings">
-                <key>pivotPoint</key>
-                <point_f>0.5,0.5</point_f>
-                <key>scale9Enabled</key>
-                <false/>
-                <key>scale9Borders</key>
-                <rect>23,25,45,50</rect>
-                <key>scale9Paddings</key>
-                <rect>23,25,45,50</rect>
-                <key>scale9FromFile</key>
-                <false/>
-            </struct>
-            <key type="filename">../HeroButton.png</key>
-            <key type="filename">../MotoButton.png</key>
-            <key type="filename">../RestarttButton.png</key>
-            <key type="filename">../StartButton.png</key>
+            <key type="filename">../../../ExitButton.png</key>
+            <key type="filename">../../../InstructionsButton.png</key>
+            <key type="filename">../../../MyGame - Copy/HeroButton.png</key>
+            <key type="filename">../../../MyGame - Copy/MotoButton.png</key>
+            <key type="filename">../../../MyGame - Copy/RestarttButton.png</key>
+            <key type="filename">../../../PlayButton.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -228,8 +217,21 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">../Police1.png</key>
-            <key type="filename">../Police2.png</key>
+            <key type="filename">../../../MyGame - Copy/Bon.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>23,25,45,50</rect>
+                <key>scale9Paddings</key>
+                <rect>23,25,45,50</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">../../../MyGame - Copy/Police1.png</key>
+            <key type="filename">../../../MyGame - Copy/Police2.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -242,8 +244,8 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">../moto1.png</key>
-            <key type="filename">../moto2.png</key>
+            <key type="filename">../../../MyGame - Copy/moto1.png</key>
+            <key type="filename">../../../MyGame - Copy/moto2.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -256,7 +258,7 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">../shole.png</key>
+            <key type="filename">../../../MyGame - Copy/shole.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -287,19 +289,21 @@
         </map>
         <key>fileList</key>
         <array>
-            <filename>../shole.png</filename>
-            <filename>../Bon.png</filename>
             <filename>D:/2.2semestre/Gaming/Assessment2/run/r/run1.png</filename>
             <filename>D:/2.2semestre/Gaming/Assessment2/run/r/run2.png</filename>
             <filename>D:/2.2semestre/Gaming/Assessment2/run/r/run4.png</filename>
-            <filename>../Police1.png</filename>
-            <filename>../Police2.png</filename>
-            <filename>../StartButton.png</filename>
-            <filename>../HeroButton.png</filename>
-            <filename>../MotoButton.png</filename>
-            <filename>../RestarttButton.png</filename>
-            <filename>../moto1.png</filename>
-            <filename>../moto2.png</filename>
+            <filename>../../../MyGame - Copy/Bon.png</filename>
+            <filename>../../../MyGame - Copy/HeroButton.png</filename>
+            <filename>../../../MyGame - Copy/moto1.png</filename>
+            <filename>../../../MyGame - Copy/moto2.png</filename>
+            <filename>../../../MyGame - Copy/MotoButton.png</filename>
+            <filename>../../../MyGame - Copy/Police1.png</filename>
+            <filename>../../../MyGame - Copy/Police2.png</filename>
+            <filename>../../../MyGame - Copy/RestarttButton.png</filename>
+            <filename>../../../MyGame - Copy/shole.png</filename>
+            <filename>../../../PlayButton.png</filename>
+            <filename>../../../InstructionsButton.png</filename>
+            <filename>../../../ExitButton.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

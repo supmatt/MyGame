@@ -3,6 +3,7 @@ module scenes {
         // member variables
         private _gameOverLabel: objects.Label;
         private _restartButton: objects.Button;
+        private _exitButton: objects.Button;
         private _route: objects.Route;
 
         // constructors
@@ -20,6 +21,7 @@ module scenes {
 
             this._gameOverLabel = new objects.Label("Good Job !!", "80px", "Dock51", "#FFFF00", config.Screen.HALF_WIDTH, 160, true);
             this._restartButton = new objects.Button("RestartButton", config.Screen.HALF_WIDTH, 380, true);
+            this._exitButton = new objects.Button("ExitButton", config.Screen.HALF_WIDTH, 440, true);
 
             this.Main();
         }
@@ -47,9 +49,16 @@ module scenes {
 
             this.addChild(this._restartButton);
 
+            this.addChild(this._exitButton);
+
             this._restartButton.on("click", function(){
                 managers.Game.ScoreBoard.Reset();
                 managers.Game.CurrentState = config.Scene.INTRODUCE;
+            }, this);
+
+            this._exitButton.on("click", function(){
+                managers.Game.ScoreBoard.Reset();
+                managers.Game.CurrentState = config.Scene.START;
             }, this);
         }
     }

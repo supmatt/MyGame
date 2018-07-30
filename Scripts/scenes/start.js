@@ -23,7 +23,9 @@ var scenes;
         Start.prototype.Start = function () {
             this._route = new objects.Route();
             this._welcomeLabel = new objects.Label("Street Adventure", "58px", "Dock51", "#FFFF00", config.Screen.HALF_WIDTH, config.Screen.HALF_HEIGHT, true);
-            this._startButton = new objects.Button("StartButton", config.Screen.HALF_WIDTH, 360, true);
+            this._startButton = new objects.Button("StartButton", config.Screen.HALF_WIDTH, 330, true);
+            this._InstructionsButton = new objects.Button("InstructionsButton", config.Screen.HALF_WIDTH, 390, true);
+            this._ExitButton = new objects.Button("ExitButton", config.Screen.HALF_WIDTH, 450, true);
             this.Main();
         };
         Start.prototype.Update = function () {
@@ -39,8 +41,16 @@ var scenes;
             this.addChild(this._route);
             this.addChild(this._welcomeLabel);
             this.addChild(this._startButton);
+            this.addChild(this._InstructionsButton);
+            this.addChild(this._ExitButton);
             this._startButton.on("click", function () {
+                managers.Game.CurrentState = config.Scene.PLAY2;
+            }, this);
+            this._InstructionsButton.on("click", function () {
                 managers.Game.CurrentState = config.Scene.INTRODUCE;
+            }, this);
+            this._ExitButton.on("click", function () {
+                managers.Game.CurrentState = config.Scene.END;
             }, this);
         };
         return Start;

@@ -24,6 +24,7 @@ var scenes;
             this._route = new objects.Route();
             this._gameOverLabel = new objects.Label("Good Job !!", "80px", "Dock51", "#FFFF00", config.Screen.HALF_WIDTH, 160, true);
             this._restartButton = new objects.Button("RestartButton", config.Screen.HALF_WIDTH, 380, true);
+            this._exitButton = new objects.Button("ExitButton", config.Screen.HALF_WIDTH, 440, true);
             this.Main();
         };
         End.prototype.Update = function () {
@@ -40,9 +41,14 @@ var scenes;
             this.addChild(this._gameOverLabel);
             this.addChild(managers.Game.ScoreBoard.HighScoreLabel);
             this.addChild(this._restartButton);
+            this.addChild(this._exitButton);
             this._restartButton.on("click", function () {
                 managers.Game.ScoreBoard.Reset();
                 managers.Game.CurrentState = config.Scene.INTRODUCE;
+            }, this);
+            this._exitButton.on("click", function () {
+                managers.Game.ScoreBoard.Reset();
+                managers.Game.CurrentState = config.Scene.START;
             }, this);
         };
         return End;
