@@ -1,4 +1,5 @@
 namespace objects {
+  //Xi(Matt) Chen  (300939785)
     export class Route extends createjs.Bitmap {
       // member variables
       private _verticalSpeed: number;

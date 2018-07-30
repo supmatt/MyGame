@@ -1,10 +1,15 @@
 namespace objects {
+    //Xi(Matt) Chen  (300939785)
+  //Data modifier July 2018
     export class Hole extends objects.GameObject {
       // member variables
       private _verticalSpeed: number;
   
-     
-      constructor() {
+     /**
+      *Creates an instance of Hole.
+      * @memberof Hole
+      */
+     constructor() {
         super("hole");
   
         this.Start();

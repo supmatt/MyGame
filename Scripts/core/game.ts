@@ -1,5 +1,8 @@
 //IIFE -- Immediately Invoked Function Expression
 // also called self executing anonymous function
+//Xi(Matt) Chen  (300939785)
+//Data modifier July 2018
+
 (function(){
     // Game Variables
     let canvas:HTMLCanvasElement;
@@ -36,20 +39,7 @@
         ],
         
        
-        // "animations": {
-        //     "hole": { "frames": [0] },
-        //     "island": { "frames": [1] },
-            
-        //     "HeroButton": { "frames": [3] },
-        //     "MotoButton": { "frames": [4] },
-        //     "moto": { "frames": [5,2],"speed": 0.1 },
-        //     "RestartButton": { "frames": [6] },
-        //     "StartButton": { "frames": [7] },
-        //     "cloud": { "frames": [8,9],"speed": 0.1 },
-            
-        //     "plane": { "frames": [10,11,10,12],"speed": 0.1  }
-            
-        // },
+
         "animations": {
             "hole": { "frames": [0] },
             "cloud": {  "frames": [1,3],"speed": 0.1 },
@@ -93,8 +83,11 @@
         AssetManager.on("complete", Start);
         AssetManager.loadManifest(Manifest);
     }
-
-    function Start():void {
+/**
+ *
+ *
+ */
+function Start():void {
         console.log(`%c Game Initializing...`,"font-weight:bold; font-size:20px; color: red;");
         canvas = document.getElementsByTagName("canvas")[0];
         stage = new createjs.Stage(canvas);

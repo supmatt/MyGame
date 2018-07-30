@@ -1,4 +1,6 @@
 module objects {
+    //Xi(Matt) Chen  (300939785)
+  //Data modifier July 2018
     export class Explosion extends objects.GameObject {
       // private instance variables
   

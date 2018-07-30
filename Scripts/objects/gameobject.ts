@@ -1,4 +1,6 @@
 module objects {
+      //Xi(Matt) Chen  (300939785)
+  //Data modifier July 2018
     export abstract class GameObject extends createjs.Sprite {
         // member variables
         public width:number;

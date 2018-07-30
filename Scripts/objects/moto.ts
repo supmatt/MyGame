@@ -1,4 +1,5 @@
 namespace objects {
+    //Xi(Matt) Chen  (300939785)
     export class Moto extends objects.GameObject {
       
       /**

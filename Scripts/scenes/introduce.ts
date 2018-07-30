@@ -1,4 +1,5 @@
 module scenes {
+    //Xi(Matt) Chen  (300939785)
     export class Introduce extends objects.Scene {
         // member variables
         private _welcomeLabel: objects.Label;

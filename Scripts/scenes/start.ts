@@ -1,4 +1,6 @@
 module scenes {
+    //Xi(Matt) Chen  (300939785)
+      //Data modifier July 2018
     export class Start extends objects.Scene {
         // member variables
         private _welcomeLabel: objects.Label;
@@ -19,6 +21,11 @@ module scenes {
         // private methods
 
         // public methods
+        /**
+         *
+         *
+         * @memberof Start
+         */
         public Start():void {
 
             this._route = new objects.Route();
@@ -42,7 +49,11 @@ module scenes {
         public Destroy():void {
             this.removeAllChildren();
         }
-
+        /**
+         *
+         *
+         * @memberof Start
+         */
         public Main():void {
             console.log(`Starting - START SCENE`);
             this.addChild(this._route);

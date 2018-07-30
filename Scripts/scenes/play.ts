@@ -1,4 +1,6 @@
 module scenes {
+      //Xi(Matt) Chen  (300939785)
+      //Data modifier July 2018
     export class Play extends objects.Scene {
         // member variables
         private _plane:objects.Plane;

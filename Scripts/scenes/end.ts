@@ -1,4 +1,5 @@
 module scenes {
+    //Xi(Matt) Chen  (300939785)
     export class End extends objects.Scene {
         // member variables
         private _gameOverLabel: objects.Label;
@@ -6,7 +7,10 @@ module scenes {
         private _exitButton: objects.Button;
         private _route: objects.Route;
 
-        // constructors
+        /**
+         *Creates an instance of End.
+         * @memberof End
+         */
         constructor() {
             super();
 
@@ -16,6 +20,11 @@ module scenes {
         // private methods
 
         // public methods
+        /**
+         *
+         *
+         * @memberof End
+         */
         public Start():void {
             this._route = new objects.Route();
 
@@ -37,8 +46,12 @@ module scenes {
         public Destroy():void {
             this.removeAllChildren();
         }
-
-        public Main():void {
+/**
+ *
+ *
+ * @memberof End
+ */
+public Main():void {
             console.log(`Starting - END SCENE`);
 
             this.addChild(this._route);

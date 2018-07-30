@@ -1,5 +1,6 @@
 //IIFE -- Immediately Invoked Function Expression
 // also called self executing anonymous function
+//Xi(Matt) Chen  (300939785)
 (function () {
     // Game Variables
     var canvas;

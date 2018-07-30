@@ -1,4 +1,6 @@
 module scenes {
+    //Xi(Matt) Chen  (300939785)
+      //Data modifier July 2018
     export class Play2 extends objects.Scene {
         // member variables
         private _moto:objects.Moto;
@@ -46,7 +48,11 @@ module scenes {
            
             this.Main();
         }
-
+        /**
+         *
+         *
+         * @memberof Play2
+         */
         public Update():void {
             this._moto.Update();
             this._route.Update();
